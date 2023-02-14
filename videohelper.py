@@ -8,7 +8,7 @@ import os
 data = pickle.loads(open('face_enc', "rb").read())
 lastPict= datetime.now();
 
-#to find path of xml file containing haarCascade file
+#to find path of xml file containing haarCascade files
 cfp = os.path.dirname(cv2.__file__) + "/data/haarcascade_frontalface_alt2.xml"
 # load the harcaascade in the cascade classifier
 fc = cv2.CascadeClassifier(cfp)
